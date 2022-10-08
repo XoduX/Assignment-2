@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Shopping Cart / Vanilla JavaScript</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Shopping Cart</title>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-sm navbar-dark sticky shadow-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)"> <img src="logo.png" alt="..." height="50"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="mynavbar">
+        <ul class="navbar-nav me-auto ">
+          <li class="nav-item" id="nav-link">
+            <a class="nav-link text-dark " href="#">Home</a>
+          </li>
+
+          <li class="nav-item" id="nav-link">
+            <a class="nav-link text-dark " href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown" id="dropdown">
+            <a class="nav-link text-dark active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Membership</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-dark" href="membership.html">Class A</a></li>
+              <li><a class="dropdown-item text-dark" href="membership.html">Class B</a></li>
+              <li><a class="dropdown-item text-dark" href="membership.html">Class C</a></li>
+            </ul>
+          </li>
+
+
+
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-dark" type="button" id="buttons" data-bs-toggle="modal" data-bs-target="#signup">Sign up</button>
+          <button class="btn btn-outline-dark" type="button" id="buttons" data-bs-toggle="modal" data-bs-target="#login">Log in</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--  cart modal  -->
+  <div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+              <button class="purchase-btn">PURCHASE</button>
+        </div>
+      </div>
+    </div>
+<!--   end of cart modal -->
+  <div class="cart-btn">
+    <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+  </div>
+<!--  products  -->
+  <div class="items-container">
+    <div class="card-1 card">
+      <img class="product-image" src="https://i0.wp.com/books.disney.com/content/uploads/2021/10/1368080545-scaled.jpg?fit=1972%2C2560&ssl=1" alt="">
+      <span class="product-info">Stories of Jedi and Sith</span>
+        <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">PHP 1395</span>
+    </div>
+    <div class="card-2 card">
+      <img class="product-image" src="https://i0.wp.com/books.disney.com/content/uploads/2018/08/9781368003537.jpg?fit=520%2C584&ssl=1" alt="">
+      <span class="product-info">Star Wars Story</span>
+      <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">PHP 1175</span>
+    </div>
+    <div class="card-3 card">
+      <img class="product-image" src="https://i0.wp.com/books.disney.com/content/uploads/2022/07/1368076637-scaled.jpg?fit=1703%2C2560&ssl=1" alt="">
+      <span class="product-info">Black Told</span>
+      <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">PHP 1150</span>
+    </div>
+    <div class="card-4 card">
+      <img class="product-image" src="https://i0.wp.com/books.disney.com/content/uploads/2022/07/9781368069113.jpg?fit=430%2C600&ssl=1" alt="">
+      <span class="product-info">Prince of Song & Sea</span>
+      <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">PHP 1575</span>
+    </div>
+    <div class="card-5 card">
+      <img class="product-image" src="https://i0.wp.com/books.disney.com/content/uploads/2022/05/9781426222207.jpg?fit=461%2C608&ssl=1" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-info">Star Gazer's Atlas</span>
+      <span class="product-price">PHP 1230</span>
+    </div>
+  </div>
+<!--  end of products  -->
+
+
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
